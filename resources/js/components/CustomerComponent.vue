@@ -4,7 +4,7 @@
       <div class="col-md-12">
         <div class="card">
           <div class="card-header">
-            <h4 class="card-title">Customers</h4>
+            <h4 class="card-title">Customers ok</h4>
             <div class="card-tools" style="position: absolute;right: 1rem;top: .5rem;">
               <button type="button" class="btn btn-info" @click="create">
                 Add New
@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-md-3">
                   <select v-model="queryFiled" class="form-control" id="fileds">
-                    <option value="name">Name</option>
+                    <option value="name">Name e</option>
                     <option value="email">Email</option>
                     <option value="phone">Phone</option>
                     <option value="address">Address</option>
@@ -109,7 +109,7 @@
             <h5
               class="modal-title"
               id="customerModalLongTitle"
-            >{{ editMode ? "Edit" : "Add New" }} Customer</h5>
+            >{{ editMode ? "Edit" : "Add New ->" }} Customer</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -180,6 +180,7 @@
         </div>
       </div>
     </div>
+    <!-- view detail data  -->
     <!-- Modal -->
     <div
       class="modal fade"
@@ -199,6 +200,7 @@
             </button>
           </div>
           <div class="modal-body">
+            <strong>hello world</strong>
             <strong>Email : {{ form.email }}</strong>
             <br>
             <strong>Phone : {{ form.phone }}</strong>
@@ -209,7 +211,8 @@
             <address>{{ form.address }}</address>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close X</button>
           </div>
         </div>
       </div>
